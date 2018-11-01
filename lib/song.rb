@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist
 
@@ -10,6 +12,7 @@ class Song
     song = Song.new(data[1])
     Artist.find_or_create_by_name(data[0])
     song.artist = data[0]
+    binding.pry
   end
 
 end
