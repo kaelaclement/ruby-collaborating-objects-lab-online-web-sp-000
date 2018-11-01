@@ -11,7 +11,7 @@ class MP3Importer
   def files
     Dir.entries(@path).select{|file| !File.directory? file}
   end
-binding.pry
+
   def import
 
   end
